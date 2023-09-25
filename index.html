@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Taller de Arreglos</title>
+    <!-- Link to the external CSS file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <ol>
+      <!-- Ejercicio 1 -->
+      <div>
+        <li>
+          <h4>
+            Crea un array o arreglo unidimensional con un tamaño de 5, asignale
+            los valores numéricos manualmente (los que tu quieras) y muestralos
+            por pantalla.
+          </h4>
+        </li>
+        <div>
+          <input
+            type="number"
+            id="valor1"
+            placeholder="Valor 1"
+          />
+          <input
+            type="number"
+            id="valor2"
+            placeholder="Valor 2"
+          />
+          <input
+            type="number"
+            id="valor3"
+            placeholder="Valor 3"
+          />
+          <input
+            type="number"
+            id="valor4"
+            placeholder="Valor 4"
+          />
+          <input
+            type="number"
+            id="valor5"
+            placeholder="Valor 5"
+          />
+        </div>
+        <p id="eje1"></p>
+        <button onclick="mostrarArreglo()">Mostrar Arreglo</button>
+      </div>
+      <!-- Ejercicio 2 -->
+      <div>
+        <li>
+          <h4>
+            Crea un array o arreglo unidimensional con un tamaño de 10, inserta
+            los valores numéricos que desees de la manera que quieras y muestra
+            por pantalla la media de valores del array
+          </h4>
+        </li>
+
+        <div>
+          <input
+            type="number"
+            id="valor2_1"
+            placeholder="Valor 1"
+          />
+          <input
+            type="number"
+            id="valor2_2"
+            placeholder="Valor 2"
+          />
+          <input
+            type="number"
+            id="valor2_3"
+            placeholder="Valor 3"
+          />
+          <input
+            type="number"
+            id="valor2_4"
+            placeholder="Valor 4"
+          />
+          <input
+            type="number"
+            id="valor2_5"
+            placeholder="Valor 5"
+          />
+          <input
+            type="number"
+            id="valor2_6"
+            placeholder="Valor 6"
+          />
+          <input
+            type="number"
+            id="valor2_7"
+            placeholder="Valor 7"
+          />
+          <input
+            type="number"
+            id="valor2_8"
+            placeholder="Valor 8"
+          />
+          <input
+            type="number"
+            id="valor2_9"
+            placeholder="Valor 9"
+          />
+          <input
+            type="number"
+            id="valor2_10"
+            placeholder="Valor 10"
+          />
+        </div>
+        <p id="eje2"></p>
+        <button onclick="mostrarMedia()">Mostrar Media</button>
+      </div>
+      <!-- Ejercicio 3 -->
+      <div>
+        <li>
+          <h4>
+            Crea un array o arreglo unidimensional donde tu le indiques el
+            tamaño por teclado y crear una función que rellene el array o
+            arreglo con los múltiplos de un numero pedido por teclado. Por
+            ejemplo, si defino un array de tamaño 5 y eligo un 3 en la función,
+            el array contendrá 3, 6, 9, 12, 15. Muestralos por pantalla usando
+            otra función distinta.
+          </h4>
+        </li>
+        <div>
+          <label for="tam">tamaño</label>
+          <input
+            type="number"
+            name="tamaño"
+            id="tam"
+            placeholder="tamaño"
+          />
+          <label for="fun">función</label>
+          <input
+            type="number"
+            name="funcion"
+            id="fun"
+            placeholder="funcion"
+          />
+        </div>
+        <p id="eje3"></p>
+        <button onclick="mostrarFuncion()">Mostrar array</button>
+      </div>
+
+      <!-- Ejercicio 4 -->
+      <div>
+        <li>
+          <h4>
+            Buscar un elemento dentro de un arreglo que nosotros le pedimos por
+            teclado. Indicar las posición donde se encuentra. Si hay más de uno,
+            indicar igualmente la posición.
+          </h4>
+        </li>
+        <label for="arr4"
+          >Introduzca el arreglo separado por comas, sin espacios (ej:
+          1,2,3,4,a,b,c)</label
+        >
+        <input
+          type="text"
+          id="arr4"
+          placeholder="arreglo"
+        />
+
+        <br />
+        <label for="elemento4">Introduzca el elemento a buscar</label>
+        <input
+          type="text"
+          id="elemento4"
+          placeholder="elemento"
+        />
+
+        <p id="eje4"></p>
+        <p id="eje4_1"></p>
+        <button onclick="posicionArr()">Mostrar posicion</button>
+      </div>
+      <!-- Ejercicio 5 -->
+      <div>
+        <li>
+          <h4>
+            Suponga un array con N números enteros generados aleatoriamente y
+            mostrados en pantalla, N debe ser un número impar, mostrar en
+            pantalla el valor que ocupa el centro del array.
+          </h4>
+        </li>
+
+        <label for="N">Ingrese Numero impar</label>
+        <input
+          type="number"
+          name="numero"
+          id="N"
+        />
+        <p id="eje5"></p>
+        <button onclick="generarArray()">Generar array</button>
+      </div>
+      <!-- Ejercicio 6 -->
+      <div>
+        <li>
+          <h4>
+            Crea un arreglo o array multidimensional que contenga 3 columnas y
+            las filas que tu quieras, las dos primeras columnas tendrán números
+            y en la 3 columna sera el resultado de sumar el número de la primera
+            y segunda columna. Muestra el array o arreglo de la siguiente forma:
+            <ul>
+              <li>3 + 5 = 8</li>
+              <li>4 + 4 = 7</li>
+            </ul>
+          </h4>
+        </li>
+
+        <label for="matrix">Cuantas filas quiere?</label>
+        <input
+          type="number"
+          id="matrix"
+        />
+        <button onclick="matrix()">Generar matriz</button>
+        <p id="eje6"></p>
+      </div>
+      <!-- Ejercicio 7 -->
+      <div>
+        <li>
+          <h4>Crear una matriz para las tablas de multiplicar</h4>
+        </li>
+        <label for="tablas">Hasta que numero quieres las tablas</label>
+        <input type="number" id="tablas">
+        <button onclick="generarTablas()">Generar tablas</button>
+        
+        <p id="eje7"></p>
+      </div>
+    </ol>
+  </body>
+  <script src="JS/ejer1.JS"></script>
+  <script src="JS/ejer2.JS"></script>
+  <script src="JS/ejer3.JS"></script>
+  <script src="JS/ejer4.JS"></script>
+  <script src="JS/ejer5.JS"></script>
+  <script src="JS/ejer6.JS"></script>
+  <script src="JS/ejer7.JS"></script>
+</html>

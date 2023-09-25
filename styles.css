@@ -1,0 +1,33 @@
+/* Aplicar el modo oscuro a todo el documento */
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #bb86fc;
+}
+
+/* Cambia el fondo de los botones */
+button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Cambia los colores de los inputs */
+input[type="number"] {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Cambia el estilo de los elementos <li> */
+li {
+  border-bottom: 1px solid #444;
+  padding: 10px;
+}
+
+/* Cambia el color del texto dentro de los elementos <li> */
+li h4 {
+  color: #bb86fc;
+}
